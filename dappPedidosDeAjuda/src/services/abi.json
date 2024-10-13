@@ -1,0 +1,199 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "p_titulo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "p_descricao",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "p_contato",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "p_meta",
+				"type": "uint256"
+			}
+		],
+		"name": "CriarNovoPedido",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "p_IdPedido",
+				"type": "uint256"
+			}
+		],
+		"name": "Doar",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "p_id_pedido",
+				"type": "uint256"
+			}
+		],
+		"name": "EncerrarPedido",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "listaPedidos",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "autorPedido",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "titulo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "descricao",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "contato",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "metaDesejada",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "saldoAtual",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "aberto",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "starId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeExibir",
+				"type": "uint256"
+			}
+		],
+		"name": "ObterPedidosAbertos",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "autorPedido",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "titulo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descricao",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "contato",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "metaDesejada",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "saldoAtual",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "aberto",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Pedido[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ultimoId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

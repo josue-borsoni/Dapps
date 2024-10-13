@@ -1,0 +1,100 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "vencedor",
+				"type": "uint256"
+			}
+		],
+		"name": "finalizar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "candidato",
+				"type": "uint256"
+			}
+		],
+		"name": "votar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "eleicao",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "candidato1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "candidato2",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "image1",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "image2",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "total1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "total2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vencedor",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "todosVotos",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "candidato",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
