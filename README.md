@@ -4,7 +4,7 @@ Neste repositório disponibilizei 3 aplicações desenvolvidas para blockchain d
 https://dapps-sigma.vercel.app/
 
 2 - Sistema de Votações baseado em blockchain
-https://dapps-m2yq.vercel.app/
+https://dapps-kjza.vercel.app/
 
 3 - Plataforma de casa e apostas (bet) em blockchain
 https://dapps-cft1.vercel.app/
