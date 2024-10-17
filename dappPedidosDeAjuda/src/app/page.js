@@ -41,8 +41,8 @@ export default function Home() {
         <div className="row ps-5">
           <p className="lead m-4">
             <b>Ajude as vítimas de enchentes e demais desastres naturais do Brasil.</b><br/>
-            Block Explorer: <a target="_blank" href="https://testnet.bscscan.com/">https://testnet.bscscan.com</a><br/>
-            Endereço do smart contract na blockchain de teste (testnet) da Binance <b>0x34e669E480Aded8301419Aba145f769c9b5164b3</b>
+            Block Explorer: <a target="_blank" href="https://amoy.polygonscan.com/">https://amoy.polygonscan.com/</a><br/>
+            Endereço do smart contract na blockchain de teste (testnet) da Polygon <b>0x8E8D6260b2c310eceE4a6b2ee121A764307f8272</b>
           </p>
         </div>
 

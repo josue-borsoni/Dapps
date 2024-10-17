@@ -22,7 +22,7 @@ export default function Home() {
 
 
     function btnSaveClick(){
-        alert("Iniciando processo de salvamento...");
+        alert("Salvando informações.");
         openRequest(request)
             .then(result => {
                 alert("Pedido enviado com sucesso. Em alguns minutos estará disponível na página inicial.");
@@ -64,7 +64,7 @@ export default function Home() {
                     <div className="col-6">
                         <div className="form-floating mb-3">
                             <input type="number" id="metaDesejada" className="form-control" value={request.metaDesejada} onChange={onInputChange} />
-                            <label htmlFor="metaDesejada">Meta em BNB (deixe em branco caso não deseje receber doação em cripto):</label>
+                            <label htmlFor="metaDesejada">Meta em POL (deixe em branco caso não deseje receber doação em cripto):</label>
                         </div>
                     </div>
                     <div className="row">

@@ -18,7 +18,7 @@ export default function Home() {
     doLogin()
     .then(account => {
       console.log(account);
-      push("/bet");
+      push("/votar");
     })
     .catch(err => {
       console.error(err);
@@ -41,6 +41,11 @@ export default function Home() {
           </div>
           <div className="col-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Eleições COB</h1>
+            <p>
+                    Block Explorer: <a target="_blank" href="https://amoy.polygonscan.com/">https://amoy.polygonscan.com/</a><br/>
+                    Endereço do smart contract na blockchain de teste (testnet) da Polygon <b>0x60547CEB0bE2a0082a7f7F4c98a59538b667d5D5</b>
+            </p>
+
             <p className="lead">Eleições on-chain para presidente do COB.</p>
             <p className="lead">Autentique-se com sua carteira e deixe seu voto para presidente do COB no próximo ciclo olímpico.</p>
             <div className="d-flex justify-content-start">

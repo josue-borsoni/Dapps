@@ -3,11 +3,18 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "vencedor",
+				"name": "winner",
 				"type": "uint256"
 			}
 		],
-		"name": "finalizar",
+		"name": "Finalizar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ReabrirVotacao",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -25,9 +32,9 @@
 				"type": "uint256"
 			}
 		],
-		"name": "votar",
+		"name": "Votar",
 		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -46,12 +53,12 @@
 			},
 			{
 				"internalType": "string",
-				"name": "image1",
+				"name": "imagem1",
 				"type": "string"
 			},
 			{
 				"internalType": "string",
-				"name": "image2",
+				"name": "imagem2",
 				"type": "string"
 			},
 			{

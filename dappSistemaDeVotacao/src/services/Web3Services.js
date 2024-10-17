@@ -1,7 +1,7 @@
 import Web3 from "web3"
 import ABI from "./abi.json"
 
-const CONTRACT_ADDRESS = "0xf9221d35fbe628709f8f665567e1FA0C526a18E8"
+const CONTRACT_ADDRESS = "0x60547CEB0bE2a0082a7f7F4c98a59538b667d5D5"
 
 export async function doLogin (){
     
@@ -38,13 +38,8 @@ export async function getDispute(){
 
 export async function votar(candidate){
     const contract = getContract();
-    return contract.methods.votar(candidate).send();
+    return contract.methods.Votar(candidate).send();
 }
 
-
-export async function finishDispute(winner){
-    const contract = getContract();
-    return contract.methods.finish(winner).send();
-}
 
 

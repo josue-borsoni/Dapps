@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/navigation";
 import  {useState} from "react";
 import { doLogin } from "@/services/Web3Services";
+import Rodape from "@/componentes/rodape";
 
 export default function Home() {
 
@@ -40,7 +41,13 @@ export default function Home() {
             <img src="https://i0.wp.com/apublica.org/wp-content/uploads/2024/07/Capa_No-combate-Kamala-x-Trump-contraste-na-agenda-climatica-fica-mais-dramatico.webp?fit=774%2C516&ssl=1" className="d-block mx-lg-auto img-fluid" width="700" height="500" />
           </div>
           <div className="col-6">
-            <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">BetCandidate</h1>
+            <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Plataforma de Apostas</h1>
+            <p>
+              Block Explorer: <a target="_blank" href="https://amoy.polygonscan.com/">https://amoy.polygonscan.com/</a><br/>
+              Endereço do smart contract na blockchain de teste (testnet) da Polygon <b>0x330A1459a38cA1e5d7e00193a6AE115e1fe0A451</b>
+
+            </p>
+
             <p className="lead">Apostas on-chain nas eleições americanas.</p>
             <p className="lead">Autentique-se com sua carteira e deixe a sua aposta para a próxima disputa.</p>
             <div className="d-flex justify-content-start">
@@ -52,15 +59,10 @@ export default function Home() {
             <p className="message">{message}</p>
           </div>
         </div>
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p className="col-4 mb-0 text-body-secondary">
-            &copy; 2024 BetCandidate, Inc
-          </p>
-          <ul className="nav col-4 justify-content-end">
-            <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Home</a></li>
-            <li className="nav-item"><a href="/about" className="nav-link px-2 text-body-secondary">About</a></li>
-          </ul>
-        </footer>
+
+        <Rodape/>
+
+
       </div>
     </>
   );

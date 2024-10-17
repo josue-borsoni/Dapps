@@ -3,20 +3,13 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "candidate",
+				"name": "candidato",
 				"type": "uint256"
 			}
 		],
-		"name": "bet",
+		"name": "Apostar",
 		"outputs": [],
 		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "claim",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -27,7 +20,21 @@
 				"type": "uint256"
 			}
 		],
-		"name": "finish",
+		"name": "Finalizar",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ReabrirAposta",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ResgatarPremio",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -38,61 +45,27 @@
 		"type": "constructor"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "allBets",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "candidate",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestamp",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "claimed",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"name": "dispute",
 		"outputs": [
 			{
 				"internalType": "string",
-				"name": "candidate1",
+				"name": "candidato1",
 				"type": "string"
 			},
 			{
 				"internalType": "string",
-				"name": "candidate2",
+				"name": "candidato2",
 				"type": "string"
 			},
 			{
 				"internalType": "string",
-				"name": "image1",
+				"name": "imagem1",
 				"type": "string"
 			},
 			{
 				"internalType": "string",
-				"name": "image2",
+				"name": "imagem2",
 				"type": "string"
 			},
 			{
@@ -107,7 +80,7 @@
 			},
 			{
 				"internalType": "uint256",
-				"name": "winner",
+				"name": "vencedor",
 				"type": "uint256"
 			}
 		],
@@ -121,6 +94,40 @@
 			{
 				"internalType": "uint256",
 				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "todasApostas",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "valorAposta",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "candidato",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "valorResgatado",
 				"type": "uint256"
 			}
 		],

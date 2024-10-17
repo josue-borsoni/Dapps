@@ -60,8 +60,8 @@ export default function Request({ data }) {
                                 <span className="opacity-50">
                                     {
                                         data.saldoAtual
-                                            ? `${Web3.utils.fromWei(data.metaDesejada, "ether")} BNB. Já foram doados ${Web3.utils.fromWei(data.saldoAtual, "ether")} BNB`
-                                            : `BNB ${Web3.utils.fromWei(data.metaDesejada, "ether")}`
+                                            ? `${Web3.utils.fromWei(data.metaDesejada, "ether")} POL. Já foram doados ${Web3.utils.fromWei(data.saldoAtual, "ether")} BNB`
+                                            : `POL ${Web3.utils.fromWei(data.metaDesejada, "ether")}`
                                     }
                                 </span>
                             </div>
